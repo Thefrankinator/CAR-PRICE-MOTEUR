@@ -1,6 +1,7 @@
 # Car Price Predictor — Moteur.ma
 
-> Estimation du prix équitable d'une voiture d'occasion au Maroc à partir des données du marché.
+> Estimation du prix équitable d'une voiture d'occasion au Maroc à\
+>  partir des données du marché.
 
 **Cours :** AI Algorithms and Predictions · **Prof :** Abdellah TAHIRI, Ph.D  
 **Dataset :** Moteur.ma_SDBDIA2A · **Source :** https://www.moteur.ma
