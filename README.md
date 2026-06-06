@@ -35,20 +35,43 @@ Car-Price-Moteur/
 
 ## Features sélectionnées
 
+Features extraites directement depuis les pages d'annonces de moteur.ma.
+
+### Informations véhicule
+
 | Feature | Type | Description |
 |---------|------|-------------|
-| `marque` | Catégorielle | Constructeur du véhicule (ex : Dacia, Volkswagen, Toyota) |
-| `modele` | Catégorielle | Modèle exact du véhicule (ex : Clio, Golf, Yaris) |
-| `annee` | Numérique | Année de mise en circulation |
-| `kilometrage` | Numérique | Kilométrage total parcouru (en km) |
-| `carburant` | Catégorielle | Type de carburant (Essence, Diesel, Hybride, Électrique) |
-| `transmission` | Catégorielle | Boîte de vitesses (Manuelle, Automatique) |
-| `puissance_moteur` | Numérique | Puissance du moteur (en chevaux, ch) |
-| `localisation` | Catégorielle | Ville ou région de l'annonce (ex : Casablanca, Agadir) |
-| `etat` | Catégorielle | État général du véhicule (Excellent, Bon, Moyen) |
-| `age_voiture` *(engineered)* | Numérique | Âge calculé : `2024 - annee` |
-| `km_par_an` *(engineered)* | Numérique | Usure annuelle : `kilometrage / age_voiture` |
-| **`prix`** | **Target (numérique)** | **Prix de vente en Dirham marocain (MAD)** |
+| `Marque` | Catégorielle | Constructeur du véhicule (ex : Dacia, Volkswagen, Toyota) |
+| `Modèle` | Catégorielle | Modèle exact (ex : Clio, Golf, Yaris) |
+| `Année` | Numérique | Année de mise en circulation |
+| `Kilométrage` | Numérique | Kilométrage total parcouru (en km) |
+| `Carburant` | Catégorielle | Type de carburant (Essence, Diesel, Hybride, Électrique) |
+| `Transmission` | Catégorielle | Boîte de vitesses (Manuelle, Automatique) |
+| `Carrosserie` | Catégorielle | Type de carrosserie (Berline, SUV, Break, etc.) |
+| `Couleur` | Catégorielle | Couleur extérieure du véhicule |
+| `Puissance fiscale` | Numérique | Puissance fiscale du moteur (en CV) |
+| `Cylindrée` | Numérique | Cylindrée du moteur (en cm³) |
+| `Nombre de portes` | Numérique | Nombre de portes du véhicule |
+| `ville` | Catégorielle | Ville de l'annonce (ex : Casablanca, Agadir) |
+
+### Options (binaires — 0(absent) / 1 (present))
+
+| Feature | Description |
+|---------|-------------|
+| `État du véhicule` | Bon état général déclaré |
+| `Airbags` | Présence d'airbags |
+| `Navigation GPS` | Système de navigation intégré |
+| `Ordinateur de bord` | Ordinateur de bord présent |
+| `Limiteur de vitesse` | Limiteur de vitesse présent |
+| `Climatisation` | Climatisation présente |
+| `Intérieur cuir` | Sièges en cuir |
+| `Radar de recul` | Radar de recul présent |
+
+### Target
+
+| Feature | Type | Description |
+|---------|------|-------------|
+| **`prix`** | **Numérique** | **Prix de vente en Dirham marocain (MAD)** |
 
 ---
 
