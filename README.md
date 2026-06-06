@@ -33,6 +33,25 @@ Car-Price-Moteur/
 
 ---
 
+## Features sélectionnées
+
+| Feature | Type | Description |
+|---------|------|-------------|
+| `marque` | Catégorielle | Constructeur du véhicule (ex : Dacia, Volkswagen, Toyota) |
+| `modele` | Catégorielle | Modèle exact du véhicule (ex : Clio, Golf, Yaris) |
+| `annee` | Numérique | Année de mise en circulation |
+| `kilometrage` | Numérique | Kilométrage total parcouru (en km) |
+| `carburant` | Catégorielle | Type de carburant (Essence, Diesel, Hybride, Électrique) |
+| `transmission` | Catégorielle | Boîte de vitesses (Manuelle, Automatique) |
+| `puissance_moteur` | Numérique | Puissance du moteur (en chevaux, ch) |
+| `localisation` | Catégorielle | Ville ou région de l'annonce (ex : Casablanca, Agadir) |
+| `etat` | Catégorielle | État général du véhicule (Excellent, Bon, Moyen) |
+| `age_voiture` *(engineered)* | Numérique | Âge calculé : `2024 - annee` |
+| `km_par_an` *(engineered)* | Numérique | Usure annuelle : `kilometrage / age_voiture` |
+| **`prix`** | **Target (numérique)** | **Prix de vente en Dirham marocain (MAD)** |
+
+---
+
 ## Pipeline
 
 ```
