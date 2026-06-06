@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Filter \"*.csv\" \"c:\\\\Users\\\\frank\\\\OneDrive\\\\Desktop\\\\Digital Garden\\\\Projects\\\\Car-Price-Moteur\\\\notebooks\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object FullName, Length)"
+    ]
+  }
+}
