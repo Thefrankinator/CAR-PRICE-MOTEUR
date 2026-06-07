@@ -16,6 +16,7 @@ plotly==5.22.0
 # Machine Learning
 scikit-learn==1.5.0
 xgboost==2.0.3
+joblib==1.4.2
 
 # Jupyter
 notebook==7.2.0
